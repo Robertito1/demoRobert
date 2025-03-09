@@ -1,0 +1,17 @@
+name: Simple Echo Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  echo-task:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: First Echo Action
+        run: echo "Hello! Code has been pushed to the repository."
+
+      - name: Second Echo Action
+        run: echo "This is another message from the workflow."
